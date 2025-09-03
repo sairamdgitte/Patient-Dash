@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('./patient.json')
+    fetch('/patient.json')
       .then(response=> response.json())
       .then(users => {this.setState({ robots: users})});
   }
