@@ -10,8 +10,10 @@ const CardList = ({ robots }) => {
             <Card
               key={i}
               id={robots[i].id}
-              name={robots[i].name}
-              email={robots[i].email}
+              name={"Name: " + robots[i].name}
+              gender={"Gender: " + robots[i].Gender}
+              allergy={"Allergy: " + robots[i].Allergy}
+              condition={"Condition: " + robots[i].Condition}
               />
           );
         })
